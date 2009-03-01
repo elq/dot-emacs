@@ -1,0 +1,12 @@
+(require 'jekyll)
+(setq jekyll-post-ext ".textile")
+(global-set-key (kbd "C-c b n") 'jekyll-draft-post)
+(global-set-key (kbd "C-c b P") 'jekyll-publish-post)
+(global-set-key (kbd "C-c b p") (lambda () 
+                                  (interactive)
+                                  (find-file "~/src/blog/_posts/")))
+(global-set-key (kbd "C-c b d") (lambda () 
+                                  (interactive)
+                                  (find-file "~/src/blog/_drafts/")))
+
+(provide 'my-blog)

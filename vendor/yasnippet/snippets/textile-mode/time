@@ -1,0 +1,3 @@
+#name : (current time)
+# --
+`(format-time-string "%d %b %Y")`
