@@ -1,0 +1,3 @@
+.emacs goes in ~/
+everything else goes in elisp (fix refs if you don't like that).
+install http://tromey.com/elpa/
