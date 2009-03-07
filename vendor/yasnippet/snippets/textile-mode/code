@@ -1,0 +1,7 @@
+#name : code
+# --
+{% highlight ${1:cpp} %}
+
+$0
+
+{% endhighlight %}

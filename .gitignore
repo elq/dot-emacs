@@ -1,0 +1,7 @@
+.svn
+*.elc
+*~
+\#*
+CVS
+.cvsignore
+semantic.cache
