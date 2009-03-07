@@ -1,3 +1,8 @@
 .emacs goes in ~/
 everything else goes in elisp (fix refs if you don't like that).
 install http://tromey.com/elpa/
+
+submodules ...
+you can get magit from http://gitorious.org/projects/magit/repos/mainline
+markdown mode git://code.jblevins.org/markdown-mode.git
+org mode http://repo.or.cz/w/org-mode.git
