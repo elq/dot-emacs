@@ -49,5 +49,9 @@
 ;; works well on my 17" hi-res macbook pro
 (setq initial-frame-alist '((top . 1) (left . 1) (width . 250) (height . 80)))
 
+;;gag
+(require 'twit)
+
+
 
 (provide 'my-settings)
