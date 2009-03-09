@@ -1,5 +1,5 @@
 (require 'jekyll)
-(setq jekyll-post-ext ".textile")
+(setq jekyll-post-ext ".markdown")
 (global-set-key (kbd "C-c b n") 'jekyll-draft-post)
 (global-set-key (kbd "C-c b P") 'jekyll-publish-post)
 (global-set-key (kbd "C-c b p") (lambda () 
