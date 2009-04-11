@@ -3,6 +3,7 @@
 ;; colors
 ;;-----------------------------------------------------------
 (defun set-theme-to-vibrant-ink ()
+  (interactive)
   (setq font-lock-maximum-decoration t)
  
   ;; set colors:

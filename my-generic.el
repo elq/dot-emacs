@@ -1,7 +1,7 @@
 ;;really sub-par hack to support carbonized emacs.
 ;;
 ;;carbon emacs doesn't have an environment from my shell.. so.. lets setup a proper path
-(setenv "PATH" (concat "/opt/local/bin:/opt/local/mysql/bin:/opt/local/sbin:" (getenv "PATH")))
+(setenv "PATH" (concat "/usr/local/bin:/opt/local/bin:/opt/local/mysql/bin:/opt/local/sbin:" (getenv "PATH")))
 (add-to-list 'exec-path (getenv "PATH"))
 (add-to-list 'exec-path "/bin")
 (add-to-list 'exec-path "/usr/bin")
@@ -106,6 +106,7 @@
 (require 'remember-autoloads)
 (setq remember-data-file "~/notes.txt")  ;; (2)
 (global-set-key (kbd "C-c r") 'remember) ;; (3)
+
 
 
 (provide 'my-generic)
