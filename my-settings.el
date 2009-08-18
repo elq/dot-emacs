@@ -1,6 +1,10 @@
 
 ;;start emacs-server so I can set my prefered visual to emacsclient
-(server-start)
+(require 'server)
+(when (and (functionp 'server-running-p) 
+           (not (server-running-p)))
+  (server-start))
+
 
 
 ;; Use only spaces for indentation (default is tab mixed with spaces)
@@ -37,6 +41,12 @@
 (when (fboundp 'global-font-lock-mode)
   (global-font-lock-mode t))
 
+;;show a marker in the left fringe for lines not in the buffer
+(setq default-indicate-empty-lines t)
+
+;; Show approx buffer size in modeline
+(size-indication-mode)
+
 
 ;;no more yes-or-no questions please...
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -51,6 +61,9 @@
 
 ;;gag
 (require 'twit)
+(add-hook 'twit-new-tweet-hook 'twit-todochiku)
+(setq twit-base-url "https://twitter.com") ;; use https to keep password secure
+(setq twit-show-user-images t)
 
 
 
